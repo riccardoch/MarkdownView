@@ -8,7 +8,7 @@ import WebKit
  */
 open class MarkdownView: UIView {
 
-  var webView: WKWebView?
+  public var webView: WKWebView?
   private var updateHeightHandler: UpdateHeightHandler?
   
   private var intrinsicContentHeight: CGFloat? {
