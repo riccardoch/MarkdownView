@@ -104,7 +104,7 @@ extension MarkdownView {
 
 extension MarkdownView: WKNavigationDelegate {
 
-  public func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
+  public func webViewNavigation(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
 
     switch navigationAction.navigationType {
     case .linkActivated:
